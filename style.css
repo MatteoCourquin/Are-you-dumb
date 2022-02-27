@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: lightblue;
+    color: #fff;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.card .buttons{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.card h1{
+    margin-top: 30px;
+}
+.card .buttons button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+}
+.btn-yes{
+    top: 40%;
+    left: 20%;
+}
+.btn-no{
+    top: 40%;
+    right: 20%;
+}
+.message{
+    display: none;
+}
