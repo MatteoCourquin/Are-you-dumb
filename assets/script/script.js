@@ -12,12 +12,12 @@ btnYes.addEventListener('click', () => {
     title.style.display = "none"
 })
 
-function entierAleatoire(min, max) {
+function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function changePosition(positionTop, positionRight) {
-    positionTop = entierAleatoire(1, 90)
-    positionRight = entierAleatoire(3, 30)
+    positionTop = randomInt(1, 90)
+    positionRight = randomInt(3, 30)
     btnNo.style.top = `${positionTop}%`
     btnNo.style.right = `${positionRight}%`
 }
